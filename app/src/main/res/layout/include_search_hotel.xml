@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="40dp"
+    android:layout_marginLeft="40dp"
+    android:id="@+id/s_hotel"
+    android:layoutDirection="rtl"
+    android:layout_marginTop="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/hotelSearchET"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/signup_mail_back"
+            android:drawablePadding="10dp"
+            android:gravity="center|right"
+            android:hint="بلد او مدينه او فندق معين"
+            android:paddingLeft="10dp"
+            android:paddingRight="40dp"
+            android:textColor="@color/gray_text"
+            android:textColorHint="@color/gray_text"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right|center"
+            android:padding="10dp"
+            app:srcCompat="@drawable/map_marker" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/fromET"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/signup_mail_back"
+                android:drawablePadding="10dp"
+                android:gravity="center|right"
+                android:hint="يوم - شهر - سنه"
+                android:paddingLeft="10dp"
+                android:paddingRight="40dp"
+                android:focusable="false"
+                android:textColor="@color/gray_text"
+                android:textColorHint="@color/gray_text"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center"
+                android:padding="10dp"
+                app:srcCompat="@drawable/calendar" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/toET"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/signup_mail_back"
+                android:drawablePadding="10dp"
+                android:gravity="center|right"
+                android:hint="يوم - شهر - سنه"
+                android:paddingLeft="10dp"
+                android:paddingRight="40dp"
+                android:focusable="false"
+                android:textColor="@color/gray_text"
+                android:textColorHint="@color/gray_text"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center"
+                android:padding="10dp"
+                app:srcCompat="@drawable/calendar" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

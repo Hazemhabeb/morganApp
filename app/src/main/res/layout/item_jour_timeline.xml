@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/wight"
+    android:layoutDirection="rtl">
+
+
+
+
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/dayTV"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@color/wight"
+            android:text="اليوم  2 "
+            android:background="@color/gray_text"/>
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="3dp"
+            app:srcCompat="@drawable/arrow_left_bold"
+            android:layout_gravity="left|center"/>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/marker_color"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/wight"
+            app:srcCompat="@drawable/checkbox_blank_circle_outline"/>
+    </FrameLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center|right"
+        android:text="الوصول"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/descTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center|right"
+        android:text="الوصول الى مطار جزيرة بالي , الاستقبال من قبل مندوب الشركة , والانتقال للفندق لاستلام الغرف"
+        android:textColor="@color/gray_text"
+        android:layout_marginBottom="10dp"
+        android:textSize="14sp" />
+</LinearLayout>
+
+</LinearLayout>

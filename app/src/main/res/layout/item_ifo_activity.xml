@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="20dp"
+    android:layoutDirection="rtl"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/topV"
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="@color/color_hotel1" />
+
+            <View
+                android:id="@+id/bottomV"
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="@color/color_hotel1" />
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/leftV"
+            android:layout_width="30dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center|left"
+            android:background="@color/color_hotel1" />
+
+        <TextView
+            android:id="@+id/numberTV"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back_info_item"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/wight"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="right|center"
+            android:text="معلومة"
+            android:textColor="@color/gray_text"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/detailTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="right|center"
+            android:text=" التفاصيل المعلومة"
+            android:textColor="@color/gray_text"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wight"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/parent_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <include layout="@layout/include_jour_reservation_detail"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:text="احجز الان"
+                    android:textColor="@color/gray_text"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+
+                    <EditText
+                        android:id="@+id/fnameEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/signup_mail_back"
+                        android:drawablePadding="10dp"
+                        android:gravity="center|right"
+                        android:hint="الاسم الاول"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="40dp"
+                        android:textColor="@color/gray_text"
+                        android:textColorHint="@color/gray_text"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right|center"
+                        android:padding="10dp"
+                        android:background="@drawable/back_reserver_color"
+                        app:srcCompat="@drawable/account" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <EditText
+                        android:id="@+id/lnameEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/signup_mail_back"
+                        android:drawablePadding="10dp"
+                        android:gravity="center|right"
+                        android:hint="العائلة"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="40dp"
+                        android:textColor="@color/gray_text"
+                        android:textColorHint="@color/gray_text"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right|center"
+                        android:padding="10dp"
+                        android:background="@drawable/back_reserver_color"
+                        app:srcCompat="@drawable/account_group" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <EditText
+                        android:id="@+id/emailET"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/signup_mail_back"
+                        android:drawablePadding="10dp"
+                        android:gravity="center|right"
+                        android:hint="البريد الالكتروني"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="40dp"
+                        android:textColor="@color/gray_text"
+                        android:textColorHint="@color/gray_text"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right|center"
+                        android:padding="10dp"
+                        android:background="@drawable/back_reserver_color"
+                        app:srcCompat="@drawable/account_group" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <EditText
+                        android:id="@+id/countryEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/signup_mail_back"
+                        android:drawablePadding="10dp"
+                        android:gravity="center|right"
+                        android:hint="البلد"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="40dp"
+                        android:textColor="@color/gray_text"
+                        android:textColorHint="@color/gray_text"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right|center"
+                        android:padding="10dp"
+                        android:background="@drawable/back_reserver_color"
+                        app:srcCompat="@drawable/map_marker_wight" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <EditText
+                        android:id="@+id/phoneEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/signup_mail_back"
+                        android:drawablePadding="10dp"
+                        android:gravity="center|right"
+                        android:hint="رقم الجوال"
+                        android:paddingLeft="10dp"
+                        android:inputType="phone"
+                        android:paddingRight="40dp"
+                        android:textColor="@color/gray_text"
+                        android:textColorHint="@color/gray_text"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right|center"
+                        android:padding="10dp"
+                        android:background="@drawable/back_reserver_color"
+                        app:srcCompat="@drawable/phone" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <EditText
+                        android:id="@+id/descEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/signup_mail_back"
+                        android:drawablePadding="10dp"
+                        android:gravity="top|right"
+                        android:paddingTop="10dp"
+                        android:hint="التفاصيل"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/gray_text"
+                        android:textColorHint="@color/gray_text"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right|center"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        android:background="@drawable/back_reserver_color"
+                        app:srcCompat="@drawable/phone" />
+                </FrameLayout>
+
+
+                <Button
+                    android:id="@+id/reservationBtn"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:text="حجز"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/wight"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/back_reserver_button"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,121 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentView_"
+    android:layoutDirection="ltr">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/wight"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            app:contentInsetStart="0dp"
+            app:popupTheme="@style/CustomActionBar">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:background="@color/holo_select_categ"
+                android:layout_height="200dp">
+
+
+                <ImageView
+                    android:id="@+id/offerImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/logo"
+                    android:visibility="visible" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/imagesRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:focusableInTouchMode="true"
+                    android:scrollbars="vertical" />
+
+                <com.merjanapp.merjan.view.CircleIndicator2
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="bottom" />
+
+                <ImageView
+                    android:id="@+id/backIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/keyboard_backspace" />
+
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:background="@drawable/back_price_detail"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="السعر"
+                        android:textColor="@color/wight"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/priceTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="100 $"
+                        android:textColor="@color/wight"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/include_detail"/>
+
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateTint="?android:colorAccent"
+        android:indeterminateTintMode="src_in"
+        android:visibility="gone" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="bottom"
+        android:textStyle="bold"
+        android:text="احجز الان"
+        android:textColor="@color/wight"
+        android:onClick="reseverationAction"
+        android:background="@drawable/back_order_activity"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

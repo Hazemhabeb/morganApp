@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wight"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/parent_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/back_search" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="40dp"
+                            android:background="@drawable/back_search_xml"
+
+                            android:paddingTop="5dp"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:id="@+id/p_hotel"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t_hotel"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="الفنادق"
+                                    android:textColor="@color/yellow_star"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:id="@+id/v_hotel"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:background="@color/yellow_star" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/p_activity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t_activity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="الانشطة"
+                                    android:textColor="@color/wight"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:id="@+id/v_activity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:background="@color/wight" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/p_jour"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/t_jour"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="العطلات"
+                                    android:textColor="@color/wight"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:id="@+id/v_jour"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:background="@color/wight" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <include layout="@layout/include_search_hotel" />
+                            <include layout="@layout/include_search_activity" />
+                            <include layout="@layout/include_search_jour" />
+                        </FrameLayout>
+
+
+                        <Button
+                            android:id="@+id/searchBtn"
+                            android:layout_width="150dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/back_reserver_button"
+                            android:text="بحث"
+                            android:textColor="@color/wight"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/searchRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

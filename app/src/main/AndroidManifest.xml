@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.merjanapp.merjan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.HotelsActivity"
+            android:theme="@style/AppTheme.NoActionBar_driver" />
+        <activity android:name=".activity.DetailHotelActivity" />
+        <activity android:name=".activity.ResultActivity" />
+        <activity android:name=".activity.ActivityDetailActivity" />
+        <activity
+            android:name=".activity.ReservationActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".activity.ResultHotelActivity" />
+        <activity android:name=".activity.ResultJourActivity" />
+        <activity android:name=".activity.DetailJourActivity"></activity>
+
+        <activity android:name=".activity.ReservationRoomActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity android:name=".activity.JourResultAskDetailActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity android:name=".activity.ReservationJourActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity android:name=".activity.SearchActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+    </application>
+
+</manifest>

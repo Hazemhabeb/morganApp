@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Merjan</string>
+
+
+    <string-array name="gavor_array"></string-array>
+
+    <string-array name="calender_array">
+        <item>اكتوبر 2018</item>
+        <item>نوفمبر 2018</item>
+        <item>ديسمبر 2018</item>
+        <item>يناير 2019</item>
+        <item>فبراير 2019</item>
+        <item>مارس 2019</item>
+        <item>ابريل 2019</item>
+        <item>مايو 2019</item>
+        <item>يونيو 2019</item>
+        <item>يوليو 2019</item>
+        <item> اغسطس 2019</item>
+        <item>سبتمبر 2019</item>
+    </string-array>
+
+</resources>

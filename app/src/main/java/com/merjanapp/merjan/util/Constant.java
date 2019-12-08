@@ -2,7 +2,12 @@ package com.merjanapp.merjan.util;
 
 
 public class Constant {
-    public static String baseUrl = "http://172.107.175.236:800/";
+    public static String baseUrl = "http://merjan-001-site3.ctempurl.com";
+//    http://merjan-001-site3.ctempurl.com
+//    http:/**///172.107.175.236:800
+
+
+
 //    http://172.107.175.236:800/
 //    http://yousif7182-001-site2.ctempurl.com/
     public static String activityOffers = "api/Activity/GetActivityOffers";
@@ -61,7 +66,7 @@ public class Constant {
 //    City Images Path:
 //    http://yousif7182-001-site1.ctempurl.com/MultiMedia/City/
 
-    public static String cityBaseImage = "http://yousif7182-001-site1.ctempurl.com/MultiMedia/City/";
+    public static String cityBaseImage = "http://gomerjan.com//MultiMedia/City/";
 
 
     //todo here the result activity response
@@ -101,7 +106,7 @@ public class Constant {
 
     //todo here all the base url for the images
 
-    public static String ImageBase = "http://172.107.175.236/";
+    public static String ImageBase = "http://gomerjan.com/";
 
     public static String ActivityOfferImage = ImageBase+"/MultiMedia/Offer/";
 

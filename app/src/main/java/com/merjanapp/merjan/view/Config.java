@@ -4,22 +4,24 @@ package com.merjanapp.merjan.view;
  * Created by hazemhabeb on 10/14/18.
  */
 
+import android.support.annotation.AnimatorRes;
+import android.support.annotation.DrawableRes;
 import android.view.Gravity;
 import android.widget.LinearLayout;
 
 import com.merjanapp.merjan.R;
 
-import androidx.annotation.AnimatorRes;
-import androidx.annotation.DrawableRes;
 
 public class Config {
 
     int width = -1;
     int height = -1;
     int margin = -1;
-    @AnimatorRes int animatorResId = R.animator.scale_with_alpha;
+    @AnimatorRes
+    int animatorResId = R.animator.scale_with_alpha;
     @AnimatorRes int animatorReverseResId = 0;
-    @DrawableRes int backgroundResId = R.drawable.white_radius;
+    @DrawableRes
+    int backgroundResId = R.drawable.white_radius;
     @DrawableRes int unselectedBackgroundId;
     int orientation = LinearLayout.HORIZONTAL;
     int gravity = Gravity.CENTER;

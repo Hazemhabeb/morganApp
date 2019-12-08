@@ -15,6 +15,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.merjanapp.merjan.R;
 import com.merjanapp.merjan.app.MySingleton;
+import com.merjanapp.merjan.util.Constant;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -72,7 +73,7 @@ public class ReservationActivity extends AppCompatActivity {
 
         loading.setVisibility(View.VISIBLE);
 
-        String url =  "http://172.107.175.236:800/api/Activity/Reserve";
+        String url =  Constant.baseUrl+"/api/Activity/Reserve";
 
 
         JSONObject object = new JSONObject();

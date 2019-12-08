@@ -19,6 +19,7 @@ import com.bumptech.glide.Glide;
 import com.merjanapp.merjan.R;
 import com.merjanapp.merjan.app.MySingleton;
 import com.merjanapp.merjan.model.JourReservationModel;
+import com.merjanapp.merjan.util.Constant;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -117,7 +118,7 @@ public class ReservationJourActivity extends AppCompatActivity {
         if (flightId==0)
             flightId=6;
 
-        String url = "http://172.107.175.236:800/api/journey/Reserve?JourneyId="+jourId
+        String url = Constant.baseUrl+"/api/journey/Reserve?JourneyId="+jourId
                 +"&FlightId="+flightId+"&NightId="+nightId
                 +"&RoomId="+nightId+"&ActivityId="+activityId
                 +"&FirstName="+fnameET.getText().toString()+"&LastName="+lnameEt.getText().toString()
